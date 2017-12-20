@@ -1,7 +1,7 @@
-#define PIN1 A0
+#define TEMP_PIN A0
 
 float get_temp(){
-  int analogValue = analogRead(PIN1);
+  int analogValue = analogRead(TEMP_PIN);
   float temp = ((analogValue * 5) / 1024.0) * 100;
   return temp;
 }
